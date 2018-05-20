@@ -21,65 +21,53 @@ SetWorkingDir %A_ScriptDir%
 	;Invoker Tool Keys
 		;Sun strike
 			LAlt & t::
-				Send {e}
-				Send {e}
-				Send {e}
+				Send {e 3}
 				Send {r}
 			return
 		;Chaos Meteor
 			LAlt & d::
-				Send {e}
-				Send {e}
+				Send {e 2}
 				Send {w}
 				Send {r}
 			return
 		;Forge Spirit
 			LAlt & f::
-				Send {e}
-				Send {e}
+				Send {e 2}
 				Send {q}
 				Send {r}
 			return
 		;Cold Snap
 			LAlt & y::
-				Send {q}
-				Send {q}
-				Send {q}
+				Send {q 3}
 				Send {r}
 			return
 		;Ghost Walk
 			LAlt & v::
-				Send {q}
-				Send {q}
+				Send {q 2}
 				Send {w}
 				Send {r}
 			return
 		;Ice Wall
 			LAlt & g::
-				Send {q}
-				Send {q}
+				Send {q 2}
 				Send {e}
 				Send {r}
 			return
 		;Alacrity
 			LAlt & z::
-				Send {w}
-				Send {w}
+				Send {w 2}
 				Send {e}
 				Send {r}
 			return
 		;Tornado
 			LAlt & x::
-				Send {w}
-				Send {w}
+				Send {w 2}
 				Send {q}
 				Send {r}
 			return
 		;EMP
 			LAlt & c::
-				Send {w}
-				Send {w}
-				Send {w}
+				Send {w 3}
 				Send {r}
 			return
 		;Deafening Blast
