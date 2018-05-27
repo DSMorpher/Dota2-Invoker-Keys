@@ -9,72 +9,65 @@ SetWorkingDir %A_ScriptDir%
 #SingleInstance force
 #MaxHotKeysPerInterval 10000
 
-#If Winactive("ahk_class Valve001") || Winactive("ahk_class SDL_app")
+#If Winactive("ahk_class Valve001") || Winactive("ahk_class SDL_app") #|| true
 {
-	WheelUp::
-		Send {PgUp}
-	return
-	WheelDown::
-		Send {PgDn}
-	return
+	; Removing Mouse Wheel support as Dota2 now supports mouse scroll key binding itself
+	;WheelUp::
+	;	Send {PgUp}
+	;return
+	;WheelDown::
+	;	Send {PgDn}
+	;return
 	
 	;Invoker Tool Keys
 		;Sun strike
 			LAlt & t::
-				Send {e 3}
-				Send {r}
+				KeyWait LAlt
+				Send {e 3}{r}
 			return
 		;Chaos Meteor
 			LAlt & d::
-				Send {e 2}
-				Send {w}
-				Send {r}
+				KeyWait LAlt
+				Send {e 2}{w}{r}
 			return
 		;Forge Spirit
 			LAlt & f::
-				Send {e 2}
-				Send {q}
-				Send {r}
+				KeyWait LAlt
+				Send {e 2}{q}{r}
 			return
 		;Cold Snap
 			LAlt & y::
-				Send {q 3}
-				Send {r}
+				KeyWait LAlt
+				Send {q 3}{r}
 			return
 		;Ghost Walk
 			LAlt & v::
-				Send {q 2}
-				Send {w}
-				Send {r}
+				KeyWait LAlt
+				Send {q 2}{w}{r}
 			return
 		;Ice Wall
 			LAlt & g::
-				Send {q 2}
-				Send {e}
-				Send {r}
+				KeyWait LAlt
+				Send {q 2}{e}{r}
 			return
 		;Alacrity
 			LAlt & z::
-				Send {w 2}
-				Send {e}
-				Send {r}
+				KeyWait LAlt
+				Send {w 2}{e}{r}
 			return
 		;Tornado
 			LAlt & x::
-				Send {w 2}
-				Send {q}
-				Send {r}
+				KeyWait LAlt
+				Send {w 2}{q}{r}
 			return
 		;EMP
 			LAlt & c::
-				Send {w 3}
-				Send {r}
+				KeyWait LAlt
+				Send {w 3}{r}
 			return
 		;Deafening Blast
 			LAlt & b::
-				Send {q}
-				Send {w}
-				Send {e}
-				Send {r}
+				KeyWait LAlt
+				Send {q}{w}{e}{r}
 			return
 }
